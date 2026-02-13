@@ -1,4 +1,7 @@
 The project goal is to study the effects of estimation window on the risk sensitivity of GARCH-based VaR models.  
+  
 To perform this, firstly GARCH VaR was compared against multiple baseline models (EWMA, historical, and FHS) to ensure its out-performance during stressed periods. Each model's performance is evaluated by VaR backtesting, unconditional test and independence test.  
-Secondly, multiple estimation window parameters (2yr, 4yr, and 6yr) were chosen to exmaine whether there's an impact on the GARCH model performance. Indices and financial sector equities were selected for this verification, as they exhibited great volatility clustering and regime shifts during 2007-2009 period. One more performance indicator is added here, VaR cost (computed as daily 99% VaR + daily PnL), to evalaute the capital efficiency of the model.  
+  
+Secondly, multiple estimation window parameters (2yr, 4yr, and 6yr) were chosen to exmaine whether there is an impact on the GARCH model performance. Indices and financial sector equities were selected for the test, as they exhibited great volatility clustering and regime shifts during 2007-2009 period. One more performance indicator is added here, VaR cost (computed as daily 99% VaR + daily PnL), to evalaute the capital efficiency of the model.  
+  
 Conclusion: GARCH model with shorter estimation window tends to be more sensitive to volatility, thus it can help capture more tail losses, yet with a higher VaR cost (capital efficiency).
